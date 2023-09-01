@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 2s linear;
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
@@ -20,11 +20,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(5px + 2vmin);
+  font-size: calc(10px + 2vmin);
   color: white;
-}
-.App-header img {
-  border-radius: 55%;
 }
 
 .App-link {
@@ -38,4 +35,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.delOppgave {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
