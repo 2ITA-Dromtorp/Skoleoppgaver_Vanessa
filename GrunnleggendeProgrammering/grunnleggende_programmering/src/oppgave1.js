@@ -16,7 +16,7 @@ function DelOppgaveA () {
 function DeloppgaveB () {
 
     return (
-        <div>
+        <div className="delOppgave">
             <h2>Deloppgave B</h2>
             <p>Hva skriver du dersom du vil gi variabelen test verdien "testverdi"? Hvilken datatype er dette?</p>
             <p>Svar: let test = testverdi</p>
@@ -28,7 +28,7 @@ function DeloppgaveB () {
 function DeloppgaveC () {
 
     return (
-        <div>
+        <div className="delOppgave">
             <h2>Deloppgave C</h2>
             <p>Hva skriver du dersom du vil regne ut 2 * 3 og sette resultatet inn i variabelen produkt?</p>
             <p>Svar: let produkt = 2*3 </p>
@@ -38,13 +38,13 @@ function DeloppgaveC () {
 }
 
 let produkt = 2*3
-console.log('2*3 er '+ produkt)
+console.log('Oppgave 1C: 2*3 er '+ produkt)
 
 
 function DeloppgaveD () {
 
     return (
-        <div>
+        <div className="delOppgave">
             <h2>Deloppgave D</h2>
             <p>Hva skriver du dersom du vil regne ut verdien av brøken 2/3 og sette resultatet inn i variabelen broek? </p>
             <p>Svar: let broek = 2/3 </p>
@@ -54,17 +54,7 @@ function DeloppgaveD () {
 }
 
 let broek = 2/3
-console.log('Verdien av 2/3 er ' + broek);
-
-
-function DeloppgaveE () {
-
-   let produkt
-}
-
-
-
-
+console.log('Oppgave 1D: Verdien av 2/3 er ' + broek);
 
 
 
