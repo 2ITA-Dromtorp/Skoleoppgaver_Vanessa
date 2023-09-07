@@ -32,6 +32,11 @@
   font-size: 0.8em;
 }
 
+input {
+  padding: 1em;
+  margin: 1em;
+}
+
 .App-link {
   color: #61dafb;
 }
