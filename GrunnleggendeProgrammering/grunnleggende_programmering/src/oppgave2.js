@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import up from './images/up.png'
 
 function DelOppgaveA () {
 
@@ -64,39 +65,7 @@ function DeloppgaveC () {
     )
 }
 
-function DeloppgaveD () {
-    //Jeg skal lage en pil opp, en pil ned, en sirkel i midten av de. Når man trykker på hver av pilene skal verdien endre seg
-    const [count, setCount] = useState(0);
 
-    function PilOpp() {
-      setCount(count + 1);
-    }
-    function PilNed() {
-      setCount(count - 1);
-    }
-  
-    function MyButton({ count, onClick }) {
-        return (
-          <>
-            
-          <button onClick={onClick}>
-            Clicked
-          </button>
-            </>
-          
-        );
-    }
-
-    return (
-      <div>
-        <h1>Counters that update together</h1>
-        <MyButton count={count} onClick={PilOpp} > <img src='../images/up.png'/> </MyButton>
-        <p>{count}</p>
-        <MyButton count={count} onClick={PilNed} />
-      </div>
-    );
-  }
-  
 
 
 function Oppgave2 () {
@@ -107,7 +76,6 @@ function Oppgave2 () {
         <DelOppgaveA />
         <DelOppgaveB />
         <DeloppgaveC />
-        <DeloppgaveD />
         </>
     )
 

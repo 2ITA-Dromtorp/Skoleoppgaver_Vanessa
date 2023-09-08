@@ -37,6 +37,16 @@ input {
   margin: 1em;
 }
 
+.button p {
+  height: 5em;
+  width: 5em;
+  border: solid red 1px;
+  border-radius: 100%;
+  padding: 0.5em;
+  background-color: aliceblue;
+  color: #282c34;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -52,4 +62,30 @@ input {
 
 .delOppgave {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box img {
+  width: 50%;
+  height: 50%;
+  margin: 1em;
+}
+
+.box p {
+  font-size: 4em;
+}
+
+.box button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
