@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ConfettiExplosion from 'react-confetti-explosion';
 
 
 export default function Klokke () {
@@ -11,17 +12,29 @@ export default function Klokke () {
 useEffect (() => {
     const myInterval = setInterval(() => {
         setCurrentTime(new Date);
-        console.log('utvikling')
     }, 1000);
 
     return () => clearInterval(myInterval);
     })
 
+    function App() {
+        const [isExploding, setIsExploding] = useState(false);
+        return <>{isExploding && <ConfettiExplosion />}</>;
+      }
+
+
+      <ConfettiExplosion
+          width={window.innerWidth}
+          height={window.innerHeight}
+          numberOfPieces={500}
+          recycle={false}
+        />;
 
     return (
         <div>
             <h1>Digital klokke</h1>
             <h2>{currentTime.toTimeString()}</h2>
+            <ConfettiExplosion/>
         </div>
     )
 

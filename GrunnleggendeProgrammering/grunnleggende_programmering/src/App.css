@@ -21,15 +21,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #293628;
+  background-color: rgb(237, 170, 170);
 }
 
 .delOppgave {
-  background-color: whitesmoke;
-  color: black;
+  color: goldenrod;
   width: 30em;
   margin: 2em;
   font-size: 0.8em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 input {
@@ -60,10 +61,6 @@ input {
   }
 }
 
-.delOppgave {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .box {
   display: flex;
   flex-direction: column;
@@ -88,4 +85,9 @@ input {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+.bang {
+  position: absolute;
+  margin-left: 3.4em;
 }
