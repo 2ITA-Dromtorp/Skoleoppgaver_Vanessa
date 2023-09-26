@@ -5,14 +5,17 @@ import Pil from './Pil';
 import Klokke from './Klokke';
 import Nedtelling from './Nedtelling';
 import Api from './Api';
-import Stein from './Stein';
+import Game from './Stein';
 import ConfettiExplosion from 'react-confetti-explosion';
+
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Stein/>
+      <Game/>
       </header>
     </div>
   );
