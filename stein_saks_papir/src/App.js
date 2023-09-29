@@ -69,6 +69,7 @@ function App() {
      <div className='top'> 
       <div className='machine'>
           <p>Maskin⬇️</p>
+          
           <img src={machineChoice.image} alt='Spiller Ukjent'/>
         </div>
 

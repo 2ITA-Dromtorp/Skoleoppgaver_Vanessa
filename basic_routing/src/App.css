@@ -1,0 +1,91 @@
+.colorPalette {
+  color: #603C14;
+  color: #9C2706;
+  color: #D45B12;
+  color: #F3BC2E;
+  color: #5F5426 ;
+}
+
+.container {
+  height: 100vh;
+  background-color: #D45B12;
+}
+
+.teacher {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 25%;
+}
+  .teacher .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6em;
+  height: 50%;
+  width: 20%;
+  font-size: 2em;
+  font-weight: bold;
+  background-color:#F3BC2E;
+  color: #603C14;
+  border: solid #603C14 0.09em;
+  }
+
+.gang {
+  height: 50%;
+  width: 16.6666%;
+}
+
+.firstRow {
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+}
+  .firstRow .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 16.6666%;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color:#F3BC2E;
+  color: #603C14;
+  border: solid #603C14 0.2em;
+  }
+
+.middleRow {
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+}
+  .middleRow .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 16.6666%;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color:#F3BC2E;
+  color: #603C14;
+  border: solid #603C14 0.2em;
+  }
+
+.lastRow {
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+}
+  .lastRow .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 16.6666%;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color:#F3BC2E;
+  color: #603C14;
+  border: solid #603C14 0.2em;
+  }
