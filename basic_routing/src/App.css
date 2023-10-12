@@ -6,86 +6,124 @@
   color: #5F5426 ;
 }
 
-.container {
-  height: 100vh;
-  background-color: #D45B12;
-}
-
-.teacher {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  height: 25%;
-}
-  .teacher .person {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 6em;
-  height: 50%;
-  width: 20%;
-  font-size: 2em;
-  font-weight: bold;
-  background-color:#F3BC2E;
-  color: #603C14;
-  border: solid #603C14 0.09em;
+/*Klassekart.js*/
+  .container {
+    height: 100vh;
+    background-color: #D45B12;
   }
 
-.gang {
-  height: 50%;
-  width: 16.6666%;
-}
+    .teacher {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      height: 25%;
+    }
+      .teacher .person {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 6em;
+      height: 50%;
+      width: 20%;
+      font-size: 2em;
+      font-weight: bold;
+      background-color:#F3BC2E;
+      color: #603C14;
+      border: solid #603C14 0.09em;
+      }
 
-.firstRow {
-  display: flex;
-  flex-direction: row;
-  height: 25%;
-}
-  .firstRow .person {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-  width: 16.6666%;
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color:#F3BC2E;
-  color: #603C14;
-  border: solid #603C14 0.2em;
-  }
+      .gang {
+        height: 50%;
+        width: 16.6666%;
+      }
 
-.middleRow {
-  display: flex;
-  flex-direction: row;
-  height: 25%;
-}
-  .middleRow .person {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-  width: 16.6666%;
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color:#F3BC2E;
-  color: #603C14;
-  border: solid #603C14 0.2em;
-  }
+      .firstRow {
+        display: flex;
+        flex-direction: row;
+        height: 25%;
+      }
+        .firstRow .person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 16.6666%;
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color:#F3BC2E;
+        color: #603C14;
+        border: solid #603C14 0.2em;
+        }
 
-.lastRow {
-  display: flex;
-  flex-direction: row;
-  height: 25%;
-}
-  .lastRow .person {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-  width: 16.6666%;
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color:#F3BC2E;
-  color: #603C14;
-  border: solid #603C14 0.2em;
+      .middleRow {
+        display: flex;
+        flex-direction: row;
+        height: 25%;
+      }
+        .middleRow .person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 16.6666%;
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color:#F3BC2E;
+        color: #603C14;
+        border: solid #603C14 0.2em;
+        }
+      .lastRow {
+        display: flex;
+        flex-direction: row;
+        height: 25%;
+      }
+        .lastRow .person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 16.6666%;
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color:#F3BC2E;
+        color: #603C14;
+        border: solid #603C14 0.2em;
+        }
+
+  /*Profil.js*/
+  .profile {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #D45B12;
   }
+  .profilecard {
+    margin-top: 2em;
+    border-radius: 3em;
+    width: 40%;
+    height: 90%;
+    background-color: #9C2706;
+    color: aliceblue;
+  }
+    .profilecard img {
+      width: 50%;
+      height: 40%;
+      border: 1px solid black;
+      border-radius: 3em;
+    }
+    .profilecard p {
+      margin-top: 2em;
+    }
+  
+    .profile button {
+      margin: 2em;
+      font-size: 1em;
+      width: 10%;
+      height: 10%;
+      background-color: #F3BC2E;
+      color: #603C14;
+      
+    }
