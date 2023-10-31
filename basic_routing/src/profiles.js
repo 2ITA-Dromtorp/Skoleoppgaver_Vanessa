@@ -22,7 +22,7 @@ let json = {
             "navn" : "Andreas",
             "klasse": "2ITA",
             "email": "Andreas@viken.no",
-            "telefon": "48246492",
+            "telefon": "veldig kul",
         },
         {
             "navn" : "Falk",

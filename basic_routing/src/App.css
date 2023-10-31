@@ -90,6 +90,20 @@
         border: solid #603C14 0.2em;
         }
 
+      .shuffleButton {
+        background-color: #D45B12;
+        text-align: center;
+      }
+        .shuffleButton button {
+          margin: 2em;
+          font-size: 1.6em;
+          width: 10%;
+          height: 25%;
+          background-color: #F3BC2E;
+          color: #603C14;
+          border: solid #603C14 0.1em;
+        }
+
   /*Profil.js*/
   .profile {
     height: 100vh;
