@@ -12,10 +12,9 @@ export default function Klassekart () {
         [array[i], array[j]] = [array[j], array[i]];
         }
         setList([...array])
-        console.log(list)
     }
 
-
+            /*så du prøver å stjele koden min?*/
     return (
     <div className='container'>
         <div className='teacher'>
@@ -32,8 +31,6 @@ export default function Klassekart () {
             <Elev name={list[2].navn}/>
             <Elev name=''/>
             <Elev name={list[3].navn}/>
-
-
 
             
         </div>
@@ -67,4 +64,3 @@ export default function Klassekart () {
 
         )
 }
-/*så du prøver å stjele koden min?*/

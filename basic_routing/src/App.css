@@ -18,19 +18,19 @@
       align-items: center;
       height: 25%;
     }
-      .teacher .person {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 6em;
-      height: 50%;
-      width: 20%;
-      font-size: 2em;
-      font-weight: bold;
-      background-color:#F3BC2E;
-      color: #603C14;
-      border: solid #603C14 0.09em;
-      }
+        .teacher .person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6em;
+        height: 50%;
+        width: 20%;
+        font-size: 2em;
+        font-weight: bold;
+        background-color:#F3BC2E;
+        color: #603C14;
+        border: solid #603C14 0.09em;
+        }
 
       .gang {
         height: 50%;
@@ -42,62 +42,62 @@
         flex-direction: row;
         height: 25%;
       }
-        .firstRow .person {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        width: 16.6666%;
-        font-size: 1.5em;
-        font-weight: bold;
-        background-color:#F3BC2E;
-        color: #603C14;
-        border: solid #603C14 0.2em;
-        }
+          .firstRow .person {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50%;
+          width: 16.6666%;
+          font-size: 1.5em;
+          font-weight: bold;
+          background-color:#F3BC2E;
+          color: #603C14;
+          border: solid #603C14 0.2em;
+          }
 
       .middleRow {
         display: flex;
         flex-direction: row;
         height: 25%;
       }
-        .middleRow .person {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        width: 16.6666%;
-        font-size: 1.5em;
-        font-weight: bold;
-        background-color:#F3BC2E;
-        color: #603C14;
-        border: solid #603C14 0.2em;
-        }
+          .middleRow .person {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50%;
+          width: 16.6666%;
+          font-size: 1.5em;
+          font-weight: bold;
+          background-color:#F3BC2E;
+          color: #603C14;
+          border: solid #603C14 0.2em;
+          }
       .lastRow {
         display: flex;
         flex-direction: row;
         height: 25%;
       }
-        .lastRow .person {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        width: 16.6666%;
-        font-size: 1.5em;
-        font-weight: bold;
-        background-color:#F3BC2E;
-        color: #603C14;
-        border: solid #603C14 0.2em;
-        }
+          .lastRow .person {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50%;
+          width: 16.6666%;
+          font-size: 1.5em;
+          font-weight: bold;
+          background-color:#F3BC2E;
+          color: #603C14;
+          border: solid #603C14 0.2em;
+          }
 
       .shuffleButton {
         background-color: #D45B12;
         text-align: center;
+        
       }
         .shuffleButton button {
           margin: 2em;
-          font-size: 1.6em;
-          width: 10%;
+          font-size: 1.3em;
           height: 25%;
           background-color: #F3BC2E;
           color: #603C14;
@@ -122,22 +122,22 @@
     background-color: #9C2706;
     color: aliceblue;
   }
-    .profilecard img {
-      width: 50%;
-      height: 40%;
-      border: 1px solid black;
-      border-radius: 3em;
-    }
-    .profilecard p {
-      margin-top: 2em;
-    }
+      .profilecard img {
+        width: 50%;
+        height: 40%;
+        border: 1px solid black;
+        border-radius: 3em;
+      }
+      .profilecard p {
+        margin-top: 2em;
+      }
   
-    .profile button {
-      margin: 2em;
-      font-size: 1em;
-      width: 10%;
-      height: 10%;
-      background-color: #F3BC2E;
-      color: #603C14;
-      
-    }
+      .profile button {
+        margin: 2em;
+        font-size: 1em;
+        width: 10%;
+        height: 10%;
+        background-color: #F3BC2E;
+        color: #603C14;
+        
+      }
