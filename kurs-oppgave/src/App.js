@@ -1,12 +1,15 @@
 import logo from './images/dromtorp-logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';  
 import  Hjem  from "./pages/hjem";
 import Data from "./pages/data";
 import Norsk from "./pages/norsk";
 import Heim from "./pages/heim";
 import Gym from "./pages/gym";
 import Book from "./pages/book";
+import Bekreftelse from "./pages/bekreftelse";
+import Signup from "./pages/signup";
 
 function App() {
   return (
@@ -15,15 +18,19 @@ function App() {
        
     <div className="App">
       <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+            <Link to={"/"}> <img src={logo} className="App-logo" alt="logo" /></Link>
       </header>
       <Routes>
         <Route path='/' element={<Hjem />}/>
-        <Route path='/:datakunnskap' element={<Data />}/>
+        <Route path='/datakunnskap' element={<Data />}/>
         <Route path='/norsk' element={<Norsk />}/>
         <Route path='/heimkunnskap' element={<Heim />}/>
         <Route path='/kroppsøvning' element={<Gym />}/>
         <Route path='/kursbooking' element={<Book />}/>
+        <Route path='/bekreftelse' element={<Bekreftelse />}/>
+        <Route path='/signup' element={<Signup />}/>
+
+
 
 
       </Routes>
