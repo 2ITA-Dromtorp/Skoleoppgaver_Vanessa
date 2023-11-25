@@ -10,18 +10,23 @@ import Gym from "./pages/gym";
 import Book from "./pages/book";
 import Bekreftelse from "./pages/bekreftelse";
 import Signup from "./pages/signup";
+import Login from "./pages/login";
 
 function App() {
+
+
+  
   return (
     <>
    
        
     <div className="App">
       <header className="App-header">
-            <Link to={"/"}> <img src={logo} className="App-logo" alt="logo" /></Link>
+            <Link to={"/hjem"}> <img src={logo} className="App-logo" alt="logo" /></Link>
       </header>
       <Routes>
-        <Route path='/' element={<Hjem />}/>
+        <Route path='/' element={<Login />}/>
+        <Route path='/hjem' element={<Hjem />}/>
         <Route path='/datakunnskap' element={<Data />}/>
         <Route path='/norsk' element={<Norsk />}/>
         <Route path='/heimkunnskap' element={<Heim />}/>
