@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import '../App.css';
 import data from '../images/data.jpg'
 import norsk from '../images/norsk.jpg'

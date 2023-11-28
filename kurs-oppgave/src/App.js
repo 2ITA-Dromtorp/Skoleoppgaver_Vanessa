@@ -31,7 +31,7 @@ function App() {
         <Route path='/norsk' element={<Norsk />}/>
         <Route path='/heimkunnskap' element={<Heim />}/>
         <Route path='/kroppsøvning' element={<Gym />}/>
-        <Route path='/kursbooking' element={<Book />}/>
+        <Route path='/kursbooking/:kurs' element={<Book />}/>
         <Route path='/bekreftelse' element={<Bekreftelse />}/>
         <Route path='/signup' element={<Signup />}/>
 

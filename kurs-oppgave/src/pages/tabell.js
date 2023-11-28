@@ -3,6 +3,7 @@ export default function () {
         <>
         <div className="timeplan_tabell">
             <table>
+                <tbody>
                 <tr>
                     <th>Tidspunkt</th>
                     <th>Mandag</th>
@@ -13,7 +14,7 @@ export default function () {
                 </tr>
                 <tr>
                     <td className="tidspunkt">08.00<br/>-09.00</td>
-                    <td>Datakunnskap</td>
+                    <td className="Datakunnskap">Datakunnskap</td>
                     <td>Norsk</td>
                     <td>Kroppsøvning</td>
                     <td>Datakunnskap</td>
@@ -22,7 +23,7 @@ export default function () {
                 </tr>
                 <tr>
                     <td className="tidspunkt">09.00<br/>-10.00</td>
-                    <td>Datakunnskap</td>
+                    <td className="Datakunnskap">Datakunnskap</td>
                     <td>Norsk</td>
                     <td>Kroppsøvning</td>
                     <td>Datakunnskap</td>
@@ -32,7 +33,7 @@ export default function () {
                 </tr>
                 <tr>
                     <td className="tidspunkt">10.00<br/>-11.00</td>
-                    <td>Datakunnskap</td>
+                    <td className="Datakunnskap">Datakunnskap</td>
                     <td>Norsk</td>
                     <td>Kroppsøvning</td>
                     <td>Kroppsøvning</td>
@@ -55,7 +56,7 @@ export default function () {
                     <td className="tidspunkt">12.00<br/>-13.00</td>
                     <td>Norsk</td>
                     <td>Heimkunnskap</td>
-                    <td>Datakunnskap</td>
+                    <td className="Datakunnskap">Datakunnskap</td>
                     <td>Heimkunnskap</td>
 
 
@@ -64,7 +65,7 @@ export default function () {
                     <td className="tidspunkt">13.00<br/>-14.00</td>
                     <td>Norsk</td>
                     <td>Heimkunnskap</td>
-                    <td>Datakunnskap</td>
+                    <td className="Datakunnskap">Datakunnskap</td>
                     <td>Heimkunnskap</td>
 
                 </tr>
@@ -72,11 +73,12 @@ export default function () {
                     <td className="tidspunkt">14.00<br/>-15.00</td>
                     <td>Norsk</td>
                     <td>Heimkunnskap</td>
-                    <td>Datakunnskap</td>
+                    <td className="Datakunnskap">Datakunnskap</td>
                     <td>Heimkunnskap</td>
 
 
                 </tr>
+                </tbody>
                 
             </table>
         </div>
