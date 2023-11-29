@@ -30,7 +30,7 @@ app.post('/create-user',(req, res) => {
     }
     const number = parseInt(b.number)
     const query = 'INSERT INTO login ( id, userName, userNumber, userMail, userPassword, userKurs ) VALUES (?, ?, ?, ?, ?, ?)'
-    const values = [null, b.username, number, b.mail, b.passord, []]
+    const values = [null, b.username, number, b.mail, b.passord, "[]"]
     console.log(query, values)
     connection.query(query, values, (err, result) => {
         if (err){
@@ -66,20 +66,16 @@ app.post('/bookKurs',(req, res) => {
     const b = req.body
     const query = 'SELECT userKurs FROM login WHERE userName = ? AND userMail = ? AND userNumber = ?'
     const values = [b.username, b.mail, b.number]
-    console.log(b)
     connection.query(query, values, (err, result) => {
         if (err){
             console.log(err)
             res.status(500).send(err)
         } else {
-            console.log(result)
             if (result.length > 0) {
                 let kurs = result[0].userKurs
+                console.log(kurs)
                 kurs = JSON.parse(kurs)
-                console.log(kurs)
-                console.log(kurs)
 
-                console.log(kurs)
                 
                 if (kurs.includes(b.kurs)) {
                     res.status(409).json("Du er allerede påmeldt dette kurset, naviger tilbake til forside")
@@ -89,7 +85,7 @@ app.post('/bookKurs',(req, res) => {
                 }
                 kurs.push(b.kurs)
                 kurs = JSON.stringify(kurs)
-                console.log(kurs)
+                console.log(kurs) + "ggmmjgmh"
 
 
                 const query = 'UPDATE login SET userKurs = ? WHERE userName = ? AND userMail = ? AND userNumber = ?'

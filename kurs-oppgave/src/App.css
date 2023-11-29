@@ -224,6 +224,7 @@ footer a {
   padding: 1em;
   background-color: #006DAD;
   color: whitesmoke;
+  width: 7em;
 }
 .timeplan_tabell .tidspunkt {
   background-color: #013553;

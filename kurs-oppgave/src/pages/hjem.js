@@ -34,7 +34,7 @@ export default function() {
                         <img onClick={() => navigate("/norsk")} src={norsk} className="body_img" alt="Bilde av ett norsk flagg på en båt med sjø og land i bakgrunn"/>
                     </div>
                     <div className='button_div'>
-                    <button onClick={() => navigate("/norsk")}>Norsk kurs</button>
+                    <button onClick={() => navigate("/norsk")}>Norsk <br/> kurs</button>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default function() {
                         <img onClick={() => navigate("/kroppsøvning")} src={gym} className="body_img" alt="Bilde av to personer som står klare til å løpe på en løpebane"/>
                     </div>
                     <div className='button_div'>
-                    <button onClick={() => navigate("/kroppsøvning")}>Kroppsøvning</button>
+                    <button onClick={() => navigate("/kroppsøvning")}>Kroppsøvning kurs</button>
                     </div>
                 </div>
         </div>

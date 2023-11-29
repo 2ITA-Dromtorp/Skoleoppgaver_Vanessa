@@ -33,6 +33,7 @@ export default function () {
         .then(async (res) => {
                         const data = await res.json();
                         console.log(res.status)
+
                         if (res.status===200) {
                             console.log(data);
                             navigate("/bekreftelse")
@@ -41,6 +42,9 @@ export default function () {
                             alert("Du må fylle ut alle feltene")
                         } else if (res.status===409) {
                             alert("Du er allerede påmeldt dette kurset")
+                        } else if (res.status===401)
+                        {
+                            alert("Feil brukernavn, mobilnummer eller mail")
                         }
                     })
                     .catch((error) => {
@@ -65,10 +69,10 @@ export default function () {
             <h6>Praktisk informasjon om kurset</h6>
             <p>Kurset ditt begynner Mandag 8 Januar og varer til og med Fredag 8 Mars.</p>
             <p>Under finner du timeplanen din</p>
-            <Tabell />
+            <Tabell  kurs={kurs}/>
         </div>
         <div className='under_info'>
-            <input onClick={() => handleSubmit()} className='button_style' type="submit" value="Book kurs" />        
+            <input onClick={() => handleSubmit()} className='button_style' type="submit" value="Book kurs"/>        
         </div>
 
         </>
