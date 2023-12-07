@@ -6,11 +6,11 @@ const express = require('express')
 const app = express()
 const port = 3000
 const mysql = require('mysql2');
-const { Sequelize, DataTypes } = require('sequelize');
+var cors = require('cors')
 
 
-app.use(express.static("build"));
-app.use(express.json());
+//Every cors request will be allowed from http://localhost:3000
+app.use(cors());
 
 const dbConfig = {
   user: 'root',
@@ -19,6 +19,8 @@ const dbConfig = {
   host: 'localhost',
   port: 8889,
 }
+
+
 
 const connection = mysql.createConnection(dbConfig);
 
@@ -33,13 +35,10 @@ app.get('/', (request, response) => {
   );
   connection.query('SELECT * FROM elev', function (error, results, fields) {
     if (error) throw error;
-    console.log(JSON.stringify(results));
     console.log('The solution is: ', JSON.stringify(results));
     response.send(JSON.stringify(results))
   });
   
-  connection.end();
-
 })
 
 
