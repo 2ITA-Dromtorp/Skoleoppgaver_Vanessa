@@ -1,18 +1,24 @@
 .styled-table {
     border-collapse: collapse;
     margin: 25px 0;
-    font-size: 0.9em;
+    font-size: 0.99em;
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: whitesmoke;
 }
 .styled-table thead tr {
-    background-color: #009879;
+    background-color: #EF476F;
     color: #ffffff;
     text-align: left;
 }
+.styled-table th {
+    text-align: center;
+    padding: 0.9em 0.8em;
+}
 .styled-table td {
     padding: 12px 15px;
+    
 }
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -23,5 +29,5 @@
 }
 
 .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #EF476F;
 }

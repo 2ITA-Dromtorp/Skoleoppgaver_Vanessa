@@ -1,81 +1,22 @@
-/*
-import axios from 'axios';
-import { useState, useEffect } from 'react';
-import BrowserRouter, { Link } from 'react-router-dom';
-import Update2 from './update2';
-import './table.css';
-
-export default function Select() {
-
-    const [customersData, setCustomersData] = useState([]);
-
-    useEffect(() => {
-        getCustomersData();
-    }, []);
-    const getCustomersData = () => {
-        axios
-            .get("http://localhost:3000/")
-            .then(response => { setCustomersData(response.data) })
-
-            .catch(error => console.log(error));
-    };
-    
-   
-
-        const [content, setContent] = useState(<updatPush />);
-      function updatPush() {
-          setContent(<Update2 />);
-        }
-
-    return (
-        <div className='content'>
-            <h1>Her er update</h1>
-            <table className='styled_table'>
-                <thead>
-                    <tr>
-                        <th>Fornavn</th>
-                        <th>Etternavn</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {customersData.map((customer) => (
-                    <tr key={customer.ElevID}>
-                        <td>{customer.Fornavn}</td>
-                        <td>{customer.Etternavn}</td>
-                        <td><button className='button' onClick={updatPush}>Update</button></td>
-
-                        <td>{content}</td>
-                        
-                    </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    )
-}*/
-
 import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './create.css'
 import { Link } from 'react-router-dom';
 
-function Update() {
+function CreateStudent() {
     const [name, setName] = useState('')
     const [lastname, setLastname] = useState('')
     const [machine, setMachine] = useState('')
     const [hobby, setHobby] = useState('')
     const [klasse, setklasse] = useState('')
     const [kjonn, setKjonn] = useState('')
-
-    const {id} = useParams()
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.put('http://localhost:3000/update/'+id, {"Fornavn":name, "Etternavn":lastname, "DatamaskinID":machine, "Hobby":hobby, "Klasse":klasse, "Kjonn":kjonn})
+        axios.post('http://localhost:3000/create', {"Fornavn":name, "Etternavn":lastname, "DatamaskinID":machine, "Hobby":hobby, "Klasse":klasse, "Kjonn":kjonn})
         .then(res => 
             {console.log(res.data)
             navigate('/')
@@ -86,7 +27,7 @@ function Update() {
         <Link to="/" className='button-top'>Tilbake</Link>
         <div className='create-student-form'>
             <form onSubmit={handleSubmit} action='/create' method='POST'>
-                <h2>Oppdater elev</h2>
+                <h2>Legg til elev</h2>
                 <div className='form-group1'>
                     <label htmlFor="">Fornavn:</label>
                     <input type="text" placeholder='Fyll inn fornavn' className='form-control' onChange={(e) => setName(e.target.value)}
@@ -129,7 +70,7 @@ function Update() {
                     </select>
                     
                 </div>
-                <button className='button'>Oppdater</button>
+                <button className='button'>Lagre</button>
             </form>
         </div>
 
@@ -137,4 +78,4 @@ function Update() {
   )
 }
 
-export default Update
+export default CreateStudent

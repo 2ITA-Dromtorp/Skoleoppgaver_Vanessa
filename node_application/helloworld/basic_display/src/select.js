@@ -1,51 +1,71 @@
-import axios from 'axios';
+import React from 'react'
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import './table.css';
-export default function Select() {
+import './App.css';
+import { Link } from 'react-router-dom';
 
-    const [customersData, setCustomersData] = useState([]);
+export default function Select() {
+    
+    const [student, setStudent] = useState([]);
 
     useEffect(() => {
-        getCustomersData();
+        getStudentData();
     }, []);
-    const getCustomersData = () => {
+    const getStudentData = () => {
         axios
             .get("http://localhost:3000/")
-            .then(response => { setCustomersData(response.data) })
-
+            .then(response => { setStudent(response.data) })
             .catch(error => console.log(error));
     };
     
-   
-    return (
-        <div className='content'>
-            <h1>Her er select</h1>
-            <table className='styled_table'>
+    const handleDelete = async (id) => {
+        try{
+            await axios.delete('http://localhost:3000/elev/'+id)
+            window.location.reload()
+        } catch(error){
+            console.log(error)
+        }
+
+    }
+
+  return (
+    <div className='content'>
+        <div className='select'>
+            <Link to="/create" className='add-student'>Legg til elev</Link>
+            <table className='styled-table'>
                 <thead>
                     <tr>
-                        <th>ElevID</th>
-                        <th>Fornavn</th>
-                        <th>Etternavn</th>
-                        <th>DatamaskinID</th>
-                        <th>Hobby</th>
-                        <th>Klasse</th>
-                        <th>Kjonn</th>
+                    <th>ElevID</th>
+                    <th>Fornavn</th>
+                    <th>Etternavn</th>
+                    <th>DatamaskinID</th>
+                    <th>Hobby</th>
+                    <th>Klasse</th>
+                    <th>Kjonn</th>
+                    <th>Verktøy</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {customersData.map((customer) => (
-                    <tr key={customer.ElevID}>
-                        <td>{customer.ElevID}</td>
-                        <td>{customer.Fornavn}</td>
-                        <td>{customer.Etternavn}</td>
-                        <td>{customer.DatamaskinID}</td>
-                        <td>{customer.Hobby}</td>
-                        <td>{customer.Klasse}</td>
-                        <td>{customer.Kjonn}</td>
+                    {student.map((data) => (
+                    <tr key={data.ElevID}>
+                        <td>{data.ElevID}</td>
+                        <td>{data.Fornavn}</td>
+                        <td>{data.Etternavn}</td>
+                        <td>{data.DatamaskinID}</td>
+                        <td>{data.Hobby}</td>
+                        <td>{data.Klasse}</td>
+                        <td>{data.Kjonn}</td>
+                        <td>
+                            <Link to={`/update/${data.ElevID}`} className='button'>Update</Link>
+                            <button className='button' onClick={ e => handleDelete(data.ElevID)}>Delete</button>
+                            
+                            </td>
                     </tr>
                     ))}
                 </tbody>
             </table>
         </div>
-    )
+        </div>
+  )
 }

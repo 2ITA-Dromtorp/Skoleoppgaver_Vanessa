@@ -1,0 +1,49 @@
+.create-student {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDFFE6;
+}
+.create-student-form {
+    background-color: whitesmoke;
+    border: solid 1px;
+    padding: 2em;
+    width: 30%;
+    line-height: 2.5em;
+}
+.create-student-form h2 {
+    color: #EF476F;
+    text-align: center;
+}
+.create-student-form label {
+    width: 50%;
+    padding: 1em;
+    font-weight: bold;
+    margin: 4.5em;
+    margin-right: -0.5em;
+}
+.create-student-form button {
+    background-color: #EF476F;
+    padding: 1em;
+    border-radius: 5%;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    border: none;
+    margin-left: 12.5em;
+    margin-top: 1em;
+
+}
+.button-top {
+    text-decoration: none;
+    background-color: #EF476F;
+    color: white;
+    padding: 1em;
+    border-radius: 5%;
+    margin-bottom: 1em;
+}
+.button-top:hover{
+    background-color: #af2b4a;
+}

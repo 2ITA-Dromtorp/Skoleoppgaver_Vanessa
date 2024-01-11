@@ -1,45 +1,20 @@
-import {useState} from 'react';
-
-
 import './App.css';
-import Select from './select.js';
-import Update from './update.js';
-import Insert from './insert.js';
-import Delete from './delete.js';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Select from './select';
+import CreateStudent from './createStudent';
+import Update from './update';
 
 function App() {
 
-  const [content, setContent] = useState(<Select />);
-  function selectPush() {
-    setContent(<Select />);
-  }
-  function updatePush() {
-    setContent(<Update />);
-  }
-  function insertPush() {
-    setContent(<Insert />);
-  }
-  function deletePush() {
-    setContent(<Delete />);
-  }
-
   return (
-    <div className="App">
-      <header className="App-header">
-          <div className='navbar'>
-              <button className='navbar_item' onClick={selectPush}>Select</button>
-              <button className='navbar_item' onClick={updatePush}>Update</button>
-              <button className='navbar_item' onClick={insertPush}>Insert</button>
-              <button className='navbar_item' onClick={deletePush}>Delete</button>
-          </div>
-      </header>
-      <>
-        <div className='content'>
-          {content}
-        </div>
-        </>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Select />} />
+        <Route path="/create" element={<CreateStudent />} />
+        <Route path="/update/:id" element={<Update />} />
+        <Route path="/delete" element={""} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
