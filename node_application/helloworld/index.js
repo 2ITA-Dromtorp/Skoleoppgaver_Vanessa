@@ -69,6 +69,12 @@ app.put('/update/:id', (request, response) => {
   const sql = "UPDATE elev SET Fornavn = ?, Etternavn = ?, DatamaskinID = ?, Hobby = ?, Klasse = ?, Kjonn = ? WHERE ElevID = ?";
   console.log(request.body.Fornavn)
   const id = request.params.id;
+  const values =   [request.body.Fornavn, 
+    request.body.Etternavn, 
+    request.body.DatamaskinID, 
+    request.body.Hobby, 
+    request.body.Klasse, 
+    request.body.Kjonn];
   connection.query(sql, [...values, id],(error, data) => {
     if (error) {
       console.log(error)
@@ -110,3 +116,20 @@ post (client - server) - legge til/insert data
 put (client- server) - endre/update eksisterene data
 delete (server - klient) - slette/delete data
 */
+
+app.get('/klasse', (request, response) => {
+  connection.connect( function (err) {
+    if (err) {
+      console.error('error connecting: ' + err.stack);
+      return;
+    }
+    console.log('connected as id ' + connection.threadId);
+  }
+  );
+  connection.query('SELECT * FROM programfag', function (error, results, fields) {
+    if (error) throw error;
+    console.log('The solution is: ', JSON.stringify(results));
+    response.send(JSON.stringify(results))
+  });
+  
+})

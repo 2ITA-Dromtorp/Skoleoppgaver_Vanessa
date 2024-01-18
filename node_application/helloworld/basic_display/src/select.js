@@ -33,6 +33,7 @@ export default function Select() {
     <div className='content'>
         <div className='select'>
             <Link to="/create" className='add-student'>Legg til elev</Link>
+            <Link to="/klasse" className='add-student'>Se programfag</Link>
             <table className='styled-table'>
                 <thead>
                     <tr>
@@ -57,8 +58,8 @@ export default function Select() {
                         <td>{data.Klasse}</td>
                         <td>{data.Kjonn}</td>
                         <td>
-                            <Link to={`/update/${data.ElevID}`} className='button'>Update</Link>
-                            <button className='button' onClick={ e => handleDelete(data.ElevID)}>Delete</button>
+                            <Link to={`/update/${data.ElevID}`} className='button'>Oppdater</Link>
+                            <button className='button' onClick={ e => handleDelete(data.ElevID)}>Slett</button>
                             
                             </td>
                     </tr>

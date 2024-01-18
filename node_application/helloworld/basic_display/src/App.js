@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Select from './select';
 import CreateStudent from './createStudent';
 import Update from './update';
+import Klasse from './klasse';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
         <Route path="/" element={<Select />} />
         <Route path="/create" element={<CreateStudent />} />
         <Route path="/update/:id" element={<Update />} />
-        <Route path="/delete" element={""} />
+        <Route path="/klasse" element={<Klasse />} />
       </Routes>
     </BrowserRouter>
   );
