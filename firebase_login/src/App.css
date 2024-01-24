@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  background-color: #2C2A4A;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #4F518C;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  border: solid white 1em;
+  border-style: dotted;
+  padding: 2em;
+  color: azure;
+}
+.h2 {
+  margin-top: 1em;
+}
+.signup-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  width: 25%;
+}
+.signup-input p {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+.signup-input button {
+  margin-top: 3em;
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 2em;
+  padding: 0.5em 1em;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.under-content a {
+  color: azure;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.under-content a:hover {
+  color: #2C2A4A;
 }
