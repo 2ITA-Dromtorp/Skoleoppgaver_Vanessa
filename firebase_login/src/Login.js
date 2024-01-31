@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import "./firebase"
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { Link, useNavigate} from "react-router-dom";
+import { Link, Navigate, useNavigate} from "react-router-dom";
 
 function Login() {
+
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -23,7 +25,7 @@ function Login() {
   return (
     <div className = "content">
             <div className = "child">
-                <form className = "form" onSubmit={""}/*endre til handleSubmit?*/>
+                <form className = "form" onSubmit={Login}/*endre til handleSubmit?*/>
                 
                     <div className = "login">
                         <input type = "email" className = "form-control"  placeholder = "name@example.com" value = { email } onChange = { (e) => setEmail(e.target.value) }/>
