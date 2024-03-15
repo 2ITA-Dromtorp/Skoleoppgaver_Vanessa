@@ -1,2 +1,2 @@
 # Vanessa sitt repository for skoleoppgaver
-## Veldig kule oppgaver
+Veldig kule oppgaver ik 
