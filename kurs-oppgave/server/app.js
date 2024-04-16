@@ -1,7 +1,7 @@
 const express = require('express')
- 
-const app = express()
 const PORT = 8481;
+const app = express()
+
 const bcrypt = require("bcrypt")
 const saltRounds = 10;
 const mysql = require('mysql2');

@@ -19,7 +19,8 @@ function Quiz({questions}) {
             setAnswer(true);
         } else {
             setAnswer(false);
-        }
+        }         
+
     };
     const onClickNext = () => {
         setAnswerIndex(null);
@@ -60,7 +61,7 @@ function Quiz({questions}) {
             {
                 choices.map((answer, index) => (
                     <li  onClick={()=> onAnswerClick(answer, index)} key={answer} className={answerIndex === index ? 'select-answer' : null}>
-                        {answer} fiks farge
+                        {answer}
                     </li>
                 ))
             }

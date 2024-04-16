@@ -1,0 +1,17 @@
+.highscore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aqua;
+}
+.score-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(221, 30, 30);
+  padding: 20px;
+  border-radius: 10px;
+}
