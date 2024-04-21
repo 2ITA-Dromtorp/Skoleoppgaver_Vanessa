@@ -1,6 +1,4 @@
-* {
-  width: 10;
-}
+
 .back{
   display: flex;
   align-items: center;
@@ -24,14 +22,15 @@ navbar {
   padding: 1.5em;
   color: white;
 }
-/*home*/
-.home {
+.loginDisplay {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 10em;
 }
-
+.loginDisplay button {
+  margin: 1.5em;
+}
 /*login*/
 .login {
   display: flex;
@@ -49,7 +48,22 @@ navbar {
   padding-top: 2em;
 }
 
+/*home*/
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10em;
+}
 
+/*admin*/
+.adminDisplay {
+  display: flex;
+  flex-direction: row;
+}
+.adminDisplay button {
+  margin: 1.5em;
+}
 /*lending*/
 .lending {
   display: flex;
@@ -65,16 +79,35 @@ navbar {
   font-size: 1.2em;
   padding-top: 2em;
 }
-.content {
+
+/*Store*/
+.store {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-top: 10em;
+}
+.content {
+  display: flex;
+  justify-content: center;
   width: 50%;
   height: 100%;
-  border: solid red 1px;
+}
+.content button {
+  margin: 1.5em;
+}
+/*Elev*/
+.student {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
 }
 
+.elev-form {
+  display: flex;
+  flex-direction: column;
+}
 
 /*button*/
 button{
@@ -114,4 +147,12 @@ button:disabled {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
+}
+.add_button {
+  margin-left: 45em;
+  margin-bottom: 1em;
+}
+.create_button {
+  margin-left: 15em;
+  margin-bottom: 1em;
 }

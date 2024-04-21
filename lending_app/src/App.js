@@ -1,28 +1,75 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import back from './images/back.png';
 import Home from './components/home';
 import Lending from './components/lending';
 import Login from './components/login';
+import AdminLogin from './components/loginAdmin';
+import Admin from './components/admin';
 import Store from './components/store';
+import Signup from './components/signup';
+import LoginDisplay from './components/welcome';
+import Utlan from './components/utlan';
+import Elev from './components/elev';
+import Create from './components/create';
+import Requests from './components/requests';
+import Cookies from 'js-cookie';
+import { useNavigate } from "react-router-dom";
+
+
+import  { useLayoutEffect } from "react";
 
 function App() {
+
+
+
+
+ //sjekk auth basert på jwt token
+//  useLayoutEffect(() => {
+//   const token = Cookies.get('token');
+
+//   // if(!token) return  navigate("/home")
+//   fetch('/api/auth', {
+//     method:'GET',
+ 
+//     headers:{
+//       "content-type":"application/json",
+//     }
+  
+//   })
+//   .then(res => 
+//     {
+//       // return res.json()
+  
+//     })
+//     .then(res => 
+//       {
+//         console.log(res)
+  
+//       })
+  
+//     .catch(err => console.log(err)) 
+
+// }, []);
+
+
   return (
     <div className="App">
 
 
       <BrowserRouter>
-            
-      <navbarTop>
-        <Link to="/" className='back' ><img src={back} alt="logo"/><p>Hjem</p></Link>
-        
-      </navbarTop>
-
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/lending" element={<Lending />} />
-      <Route path='/login' element={<Login />} />
+      <Route path="/" element={<LoginDisplay />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/adminLogin" element={<AdminLogin />} />
+      <Route path="/admin" element={<Admin />} />
+      <Route path="/create" element={<Create />} />
+      <Route path="/borrowed" element={<Utlan />} />
+      <Route path="/requests" element={<Requests />} />
+      <Route path='/home' element={<Home />} />
+      <Route path="/lending/:id" element={<Lending />} />
       <Route path='/store' element={<Store />} />
+      <Route path='/elev' element={<Elev />} />
+      <Route path="/addStudent" element={<Signup />} />
 
       </Routes>
       </BrowserRouter>
