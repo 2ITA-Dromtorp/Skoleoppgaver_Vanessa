@@ -11,15 +11,14 @@ const Test = () => {
     event.preventDefault(); // Gjør at siden ikke refresher siden.
     };
 
-    // få tilgang til inputverdiene
-    console.log('navn', firstRef.current.value);
+    // få tilgang til inputverdiene   console.log('navn', firstRef.current.value);
     console.log('tilbakemelding', lastRef.current.value);
 
     const newmess = `${firstRef.current.value} ${lastRef.current.value}`
     setMessage((prevList) => [...prevList, newmess]);
 
     // Fjerner inputverdier i form
-    event.target.reset();
+  e.target.reset();
 
 
   return (

@@ -32,7 +32,8 @@ function Store() {
         <navbar>Utstyr</navbar>
     
         <div className='store'>
-        <Link to="/create"><button className='create_button'>Legg til utstyr</button></Link>
+        
+        {/* <Link to="/create"><button className='create_button'>Legg til utstyr</button></Link> */}
 
             <div className="content">
 

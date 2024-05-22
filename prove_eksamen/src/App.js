@@ -12,7 +12,6 @@ function App() {
       <h1 className="info">Vi Trenger Hjelp er opptatte av god kommunikasjon med kundene våres. Etter at du har gitt oss en tilbakemeldig, vil vi kontakte deg så snart som mulig. </h1>
       <h2 className="info">Når du har fått hjelp og saken din er løst, skal du krysse av saken din som "Løst"</h2>
 
-      <Input />
       <Test />
 
       <div className="footer">

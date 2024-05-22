@@ -22,28 +22,28 @@ function Elev() {
             .catch(error => console.log(error));
         
     };
-    const handleDelete = (id) => {
-        fetch('/api/elev/'+id, {
-                method: 'GET',
-                headers: {
-                    "content-type": "application/json",
-                } 
-            })
-            .then(response => response.json())
-            .then(data =>{
-               console.log(data)
-                if(data.status === 'ok'){
-                    return getElevData();
-                }
-                return 
+    // const handleDelete = (id) => {
+    //     fetch('/api/elev/'+id, {
+    //             method: 'GET',
+    //             headers: {
+    //                 "content-type": "application/json",
+    //             } 
+    //         })
+    //         .then(response => response.json())
+    //         .then(data =>{
+    //            console.log(data)
+    //             if(data.status === 'ok'){
+    //                 return getElevData();
+    //             }
+    //             return 
 
-            }) 
-            .catch(error => console.log(' test', error));
+    //         }) 
+    //         .catch(error => console.log(' test', error));
 
 
         
 
-        }
+    //     }
     
   return (
     <div>
@@ -78,8 +78,6 @@ function Elev() {
                                 <td>{data.telefon}</td>
                                 <td>{data.elevMail}</td>
                                 <td>{data.klasseID}</td>
-                                <td>            
-                                </td>
                             </tr>
                                 ))}
                         </tbody>

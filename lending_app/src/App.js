@@ -12,44 +12,10 @@ import Utlan from './components/utlan';
 import Elev from './components/elev';
 import Create from './components/create';
 import Requests from './components/requests';
-import Cookies from 'js-cookie';
-import { useNavigate } from "react-router-dom";
 
 
-import  { useLayoutEffect } from "react";
 
 function App() {
-
-
-
-
- //sjekk auth basert på jwt token
-//  useLayoutEffect(() => {
-//   const token = Cookies.get('token');
-
-//   // if(!token) return  navigate("/home")
-//   fetch('/api/auth', {
-//     method:'GET',
- 
-//     headers:{
-//       "content-type":"application/json",
-//     }
-  
-//   })
-//   .then(res => 
-//     {
-//       // return res.json()
-  
-//     })
-//     .then(res => 
-//       {
-//         console.log(res)
-  
-//       })
-  
-//     .catch(err => console.log(err)) 
-
-// }, []);
 
 
   return (

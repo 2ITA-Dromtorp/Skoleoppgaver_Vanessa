@@ -36,7 +36,6 @@ function Utlan() {
                         <tr>
                             <th>Utstyr-ID</th>
                             <th>Elev-ID</th>
-                            <th>Dato</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -44,7 +43,6 @@ function Utlan() {
                         <tr key={data.UtstyrID}>
                             <td>{data.UtstyrID}</td>
                             <td>{data.ElevID}</td>
-                            <td>{data.Dato}</td>
                         </tr>
                         ))}
                     </tbody>
